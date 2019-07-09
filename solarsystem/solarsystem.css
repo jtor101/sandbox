@@ -1,0 +1,297 @@
+    /* I: Header */
+
+
+header h1 {
+        color: blue;
+}
+
+
+    /* II: Navigation */
+
+
+nav {
+        width: 50%;
+}
+
+
+nav ul {
+        list-style-type: none;
+}
+
+nav ul li {
+        float: left;
+        width: 20%;
+}
+
+nav ul li a {
+        display: inline-block;
+        color: blue;
+        text-align: center;
+        text-decoration: none;
+        padding: 5px 20px 5px 20px;
+}
+
+nav li a:hover {
+        text-decoration: underline;
+}
+
+nav li a.active {
+        text-decoration: underline;
+        background-color: rgba(0,255,0,.25);
+}
+
+nav li a:active {
+        text-decoration: underline;
+        background-color: rgba(0,255,0,.25);
+}
+
+
+    /*III: Facts Table */
+
+
+.facts {
+        clear: both;
+        float: left;
+        width: 25%;
+        margin: .75em;
+}
+
+.facts table {
+        border: 1px solid black;
+}
+
+.facts table td {
+        border: 1px solid black;
+}
+
+.facts table th {
+        border: 1px solid black;
+        color: blue;
+}
+  
+.facts h3 {
+        color: blue;
+}
+
+.facts .credit {
+        text-align: right;
+        font-size: .75em;
+}
+
+
+    /*IV: Our Earth & Our Moon */
+
+
+.earth {
+        float: left;
+        width: 50%;
+}
+
+.earth h2 {
+        color: blue;
+}
+
+.earth h3 {
+        color: black;
+}
+
+.earth img {
+        float: right;
+        border-radius: 25px;
+        max-width: 50%;
+        padding: 3px;
+        margin: 20px;
+}
+
+
+    /*V: Moon Landings */
+
+
+.moonlandings {
+        clear: right;
+        float: left;
+}
+
+.moonlandings h3 {
+        color: blue;
+}
+
+.moonlandings ul {
+        list-style-type: circle;
+}
+
+
+    /* VI: HR Divider */
+
+
+hr {
+        border-style: inset;
+        border-color: blue;
+        background-color: blue; color: blue;
+        clear: left;
+        float: left;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 100%;
+}
+
+
+    /* VII: Footer */
+
+
+footer {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+}
+
+footer ul li {
+        display: inline-block;
+        width: 33%;
+}
+
+footer ul li ul {
+        list-style-type: circle;
+}
+
+
+footer ul li ul li {
+        display: list-item;
+}
+
+footer ul li ul li a {
+        text-decoration: none;
+}
+
+
+    /* VIII: For Fun */
+
+
+@media screen and (max-width: 1020px) {
+    
+    nav {width: 100%;}
+    
+    nav li a {
+        width: 40%;
+        border: 1px solid black;
+        text-align: left;
+        margin: 0;
+        padding: 0;}
+    
+    .facts {
+        clear: left;
+        float: right;
+        margin-right: 3.5em;
+        white-space: nowrap;
+        font-size: .8em;
+  }
+    
+    .moonlandings {
+        clear: right;
+        float: right;
+        margin-right: 3.5em;
+        font-size: .9em;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    nav {width: 100%;
+        padding: 1px;
+    }
+    
+    nav li {
+        font-size: .8em;
+    }
+    
+
+    nav li a {
+        width: 40%;
+        text-align: left;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .facts {
+        margin-right: 7em;
+    }
+    
+    .earth {
+        font-size: .8em;
+    }
+    
+    .earth img {
+        float: left;
+    }
+    
+    hr {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    footer {
+        font-size: .5em;
+        padding: 0 .5em 0 .5em;
+        width: 90%;
+    }
+        
+    footer ul li {
+        width: 30%;
+    }    
+
+}
+
+
+@media screen and (max-width: 450px) {
+    nav {
+        position: relative;
+        right: 40px;
+    }
+    
+    nav li {
+        clear: both;
+        float: left;
+    }
+    nav li a {
+        width: 70%;
+    }
+    
+    .facts {
+        float: left;
+        position: relative;
+        right: 10px;
+    }
+    
+    .earth {
+        float: left;
+    }
+    
+    .earth img {
+        float: left;
+        max-width: 80%;
+        position: relative;
+        right: 20px;
+    }
+
+    .moonlandings {
+        float: left;
+    }
+
+    footer {
+        width: 90%;
+        font-size: .8em;
+        position: relative;
+        right: 35px;
+    }
+
+    footer ul li {
+        width: 30%;
+    }
+
+    footer ul li a {
+        position: relative;
+        right: 25px;
+        white-space: nowrap;
+    }
+}
